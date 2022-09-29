@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  company_name: MyString
-  alias: MyString
+  first_name: Mark
+  last_name: Relmont
+  email: jatj@atat.com
+  company_name: Thinker
+  alias: ren1
 
 two:
-  first_name: MyString
-  last_name: MyString
-  email: MyString
-  company_name: MyString
-  alias: MyString
+  first_name: Jane
+  last_name: Jopper
+  email: jjoper@remi.co
+  company_name: Remi Inc
+  alias: remi

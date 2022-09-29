@@ -1,0 +1,23 @@
+<div class="user">
+  <section>
+    <ol>
+      <li>
+        <div><%= link_to user.first_name, user_path(user) %></div>
+        <div><%= link_to user.last_name, user_path(user) %></div>
+        <div><%= user.email %></div>
+        <div><%= user.company_name %></div>
+        <div><%=  user.alias %></div>
+
+        <div class="user_actions">
+          <%= button_to "Delete",
+                        user_path(user),
+                        method: :delete,
+                        class: "btn" %>
+          <%= link_to "Edit",
+                      edit_user_path(user),
+                      class: "btn" %>
+        </div>
+      </li>
+    <ol>
+  </section>
+</div>
