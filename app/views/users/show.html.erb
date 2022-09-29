@@ -1,4 +1,6 @@
 <main class="container">
+  <p><%= link_to(sanitize('&larr; All Users'), users_path) %></p>
+
   <h2>User <%= @user.first_name %></h2>
   <section>
     <div><%= @user.first_name %></div>
