@@ -1,11 +1,13 @@
-<section>
-<%= form_with model: user do |form| %>
-  <div>First Name: <%= form.text_field :first_name %></div>
-  <div>Last Name: <%= form.text_field :last_name %></div>
-  <div>Email: <%= form.text_field :email %></div>
-  <div>Company Name: <%= form.text_field :company_name %></div>
-  <div>Alias: <%= form.text_field :alias %></div>
-  <br>
-  <div><%= form.submit %></div>
+<%= turbo_frame_tag(user) do %>
+  <section>
+  <%= form_with model: user do |form| %>
+    <div>First Name: <%= form.text_field :first_name %></div>
+    <div>Last Name: <%= form.text_field :last_name %></div>
+    <div>Email: <%= form.text_field :email %></div>
+    <div>Company Name: <%= form.text_field :company_name %></div>
+    <div>Alias: <%= form.text_field :alias %></div>
+    <br>
+    <div><%= form.submit %></div>
+  <% end %>
+  </section>
 <% end %>
-</section>
