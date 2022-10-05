@@ -3,5 +3,10 @@
 
   <p><%= link_to('New User', new_user_path) %></p>
 
+  <!-- Paginated Table Data -->
+  <%= turbo_frame_tag('pagination-frame', src: paginate_users_path) do %>
+    <span>Loading...</span>
+  <% end %>
+
   <%= render @users %>
 </main>

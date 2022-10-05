@@ -3,5 +3,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  resources :users
+  resources :users do
+    collection do
+      get 'paginate', to: 'users#paginate'
+    end
+  end
 end

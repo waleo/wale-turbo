@@ -42,6 +42,10 @@ class UsersController < ApplicationController
     redirect_to users_path, notice: 'User was successfully deleted.'
   end
 
+  def paginate
+    @paginated_users = User.paginate(page: params[:page], per_page: 5)
+  end
+
   private
 
   def user_params
