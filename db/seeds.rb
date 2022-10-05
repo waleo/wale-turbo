@@ -5,5 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-puts "\n== Seeding the database with fixtures =="
-system("bin/rails db:fixtures:load")
+#puts "\n== Seeding the database with fixtures =="
+#system("bin/rails db:fixtures:load")
+100.times do |i|
+  user = User.create(first_name: Faker::Name.first_name,
+                     last_name: Faker::Name.last_name,
+                     email: Faker::Internet.email,
+                     company_name: Faker::Company.name
+                    )
+end
